@@ -6,10 +6,10 @@
 %global	mainver	3.4.1
 %undefine	prever
 
-%global	mainrel	3
+%global	mainrel	4
 %global	prerpmver	%(echo "%{?prever}" | sed -e 's|\\.||g')
 
-%global	need_bootstrap_set	1
+%global	need_bootstrap_set	0
 
 Name:		%{?scl_prefix}rubygem-%{gem_name}
 Version:	%{mainver}
@@ -123,7 +123,7 @@ popd
 %doc	%{gem_docdir}
 
 %changelog
-* Wed Feb 24 2016 Pavel Valena <pvalena@redhat.com> - 3.4.1-3
+* Wed Feb 24 2016 Pavel Valena <pvalena@redhat.com> - 3.4.1-4
 - Add scl macros
 
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 3.4.1-2.1
